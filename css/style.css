@@ -31,7 +31,13 @@ h1,h2,h3,h4,h5,h6,p,span{
 }
 .col-md-12{
 	width: 100%;
-	display: block;
+}
+.col-md-6{
+	width: 50%;
+
+}
+.offset-md-3{
+	margin-left: 30%;
 }
 .col-md-4{
 	width: 33.3333%;
@@ -131,6 +137,16 @@ h1,h2,h3,h4,h5,h6,p,span{
 	transition: 0.5s ease-in-out;
 }
 
+.content i{
+	color: #fff;
+	font-size: 30px;
+	padding-top: 90px;
+	transition: 0.4s ease-in-out;
+}
+
+.content i:hover{
+	
+}
 /*====================================
 	3rd section css
 ======================================*/
@@ -157,13 +173,16 @@ h1,h2,h3,h4,h5,h6,p,span{
 
 .service{
 	width: 100%;
-	padding: 40px 0;
+	padding: 50px 0;
 }
 .service .content{
 	text-align: center;
 }
 .service .col-md-4{
-	padding: 0px 15px;
+	padding: 0px 25px;
+}
+.service  img{
+	margin-bottom: 30px;
 }
 .service .content h4{
 	color: #2d3950;
@@ -175,6 +194,7 @@ h1,h2,h3,h4,h5,h6,p,span{
 	color: #999999;
 	font-size: 16px;
 	font-weight: 300;
+	padding-top: 10px;
 }
 
 
@@ -233,6 +253,105 @@ h1,h2,h3,h4,h5,h6,p,span{
 
 .contact{
 	width: 100%;
+	height: auto;
+	background-image: url('../img/footer.jpg');
 	padding: 50px 0;
-	background: url(../img/footer.jpg) no-repeat top center cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+.contact .title_content{
+	text-align: center;
+}
+.contact .title_content h1{
+	color: #fff;
+	font-size: 41px;
+}
+.contact .title_content p{
+	color: #999999;
+	font-size: 16px;
+    line-height: 32px;
+    margin: 17px 30px 0;
+}
+form{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+input{
+	display: block;
+	width: 80%;
+	height: 55px;
+	border: 1px solid #999999;
+}
+.form-control{
+	margin: 17px 0px;
+	border-radius: 3px;
+	padding-left: 15px;
+	font-size: 16px;
+}
+.form-control{
+	background: transparent;
+}
+textarea{
+	margin-top: 0px;
+} 
+.contact button{
+	background: transparent;
+	color: #fff;
+	border: 1px solid #48baff;
+	padding: 18px 40px;
+	text-align: right;
+}
+.button_area .left{
+	float: left;
+	font-size: 16px;
+}
+.left{
+	display: flex;
+}
+.left input{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #999999;
+}
+.button_area .right{
+	float: right;
+    margin-right: 90px;
+    margin-bottom: 50px;
+}
+
+/*====================================
+	footer section (portfolio)
+======================================*/
+
+.footer{
+	width: 100%;
+}
+.left_footer{
+	float: left;
+	margin-top: 30px;
+}
+.right_footer{
+	float: right;
+}
+.left_footer p{
+	color: #999999;
+}
+.right_footer ul li{
+	list-style: none;
+	display: inline-block;
+	padding-left: 15px; 
+}
+.right_footer ul li a{
+	text-decoration: none;
+	text-align: center;
+
+}
+.right_footer ul li a i{
+	padding-top: 10px;
+    height: 30px;
+    width: 36px;
+    color: #fff;
+    background: #48baff;
+    border-radius: 2px;
 }
