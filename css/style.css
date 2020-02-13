@@ -1,0 +1,238 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+/* global css section */
+
+body{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+	margin: 0;
+}
+/* custom css */
+
+.container{
+	width: 1140px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+.container-fluid{
+	width: 100%;
+	height: auto;
+}
+.row{
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+.col-md-12{
+	width: 100%;
+	display: block;
+}
+.col-md-4{
+	width: 33.3333%;
+}
+.img-fluid{
+	height: 100%;
+	width: 100%;
+}
+
+/*====================================
+	header section css
+======================================*/
+
+.header{
+	width:100%;
+	height: auto;
+	background: #fff;
+	padding: 20px 0;
+}
+.header .logo{
+	width: 20%;
+	text-align: left;
+}
+.menu{
+	width: 80%;
+	text-align: right;
+}
+.header .menu ul li{
+	list-style: none;
+	display: inline-block;
+	padding-left: 15px;
+    font-weight: 600;
+}
+.header .menu ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #2c364b;
+}
+.header .menu ul li a:hover{
+	color: #48baff;
+}
+
+/*====================================
+	banner section css
+======================================*/
+
+.banner{
+	width: 100%;
+	height: auto;
+	background-image: url('../img/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+.banner .content{
+	text-align: center;
+	padding: 140px 0;
+}
+.banner .content h1{
+	
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 110px;
+    letter-spacing: 7px;
+    color: #fff;
+}
+.content .hr{
+	width: 60%;
+	margin: 0 auto;
+	border-bottom: 2px solid #15a4fa;
+}
+.content p{
+	font-family: 'Lato', sans-serif;
+	padding: 30px 0px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 22px;
+}
+.content span{
+	text-transform: uppercase;
+}
+.content .button{
+	margin: 30px 0;
+}
+.content .button a{
+	text-decoration: none;
+    padding: 15px 35px;
+    color: #fff;
+    border: 1px solid #48baff;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+}
+.content .button a:hover{
+	background: #48baff;
+	color: #fff;
+	transition: 0.5s ease-in-out;
+}
+
+/*====================================
+	3rd section css
+======================================*/
+
+.design{
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+	background: #f6f9f9;
+}
+.design .title h3{
+	color: #2d3950;
+	font-size: 41px;
+}
+.design .content p{
+	color: #999999;
+	font-size: 20px;
+    line-height: 32px;
+    margin: 17px 30px 0;
+}
+/*====================================
+	4th section css (service)
+======================================*/
+
+.service{
+	width: 100%;
+	padding: 40px 0;
+}
+.service .content{
+	text-align: center;
+}
+.service .col-md-4{
+	padding: 0px 15px;
+}
+.service .content h4{
+	color: #2d3950;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+.service .content p{
+	color: #999999;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+
+/*====================================
+	5th section (portfolio)
+======================================*/
+
+.portfolio{
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+	background: #f6f9f9;
+}
+.portfolio h1{
+	font-family: 'Lato', sans-serif;
+	color: #2d3950;
+	font-size: 41px;
+}
+.portfolio p{
+	color: #999999;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 12px 0;
+}
+.portfolio .col-md-4{
+	padding: 0 10px;
+}
+.portfolio_content{
+	margin-top: 30px;
+}
+
+.portfolio .col-md-4{
+	position: relative;
+}
+.portfolio .col-md-4 img{
+	display: block;
+}
+.overlay{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #48baff;
+	opacity: 0.7;
+	width: 100%;
+	height: 0%;
+	transition: 0.4s ease-in-out;
+}
+.portfolio .col-md-4:hover .overlay{
+	height: 100%;
+}
+
+/*====================================
+	contact form section (portfolio)
+======================================*/
+
+.contact{
+	width: 100%;
+	padding: 50px 0;
+	background: url(../img/footer.jpg) no-repeat top center cover;
+}
